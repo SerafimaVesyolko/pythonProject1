@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.but{
+    height: 50px;
+    width: 150px;
+     background:linear-gradient( rgb(228, 50, 255), rgb(93, 92, 92));
+     color: azure;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.inp{
+    width: 100px;
+    height: 30px;
+    color: cornflowerblue;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+#myDialog{
+    background-color: rgb(197, 146, 196);
+
+}
+    </style>
+</head>
+<body style="background-color: rgb(177, 176, 181);">
+   <div> <button class="but" type="button" onclick="window.myDialog.show()"> show</button></div>
+     <div> Enter<input class="inp" type="text"> </div>
+      <dialog id="myDialog">Enter <input type="text"></dialog>
+      <div><button class="but" type="button" onclick="window.myDialog.close()">close</button></div>
+</body>
+</html>
